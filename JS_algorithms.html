@@ -44,6 +44,30 @@
 
       </script></p>
 
+      <!--
+        Palindromes.
+          check if a string is a palindrome.
+          need to remove all non-alphanumeric
+          characters and turn everything lowercase.
+          remove (punctuation, spaces, symbols)
+      -->
+
+      <p><script type="text/javascript">
+
+        function palindrome(str) {
+          str = str.toLowerCase().replace(/[\W_]/g, '');
+          var last = str.length - 1;
+          for (i = 0; i < last/2; i++) {
+            if (str[i] !== str[last-i]) {
+              return false;
+            }
+          }
+          return true;
+        }
+
+        document.write(palindrome('race car'));
+      </script></p>
+
     </body>
   </head>
 </html>
