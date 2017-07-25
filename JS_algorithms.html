@@ -13,16 +13,36 @@
         then reverse it ,
         then make it a string again.
       -->
-      <script type="text/javascript">
+      <p><script type="text/javascript">
 
         function reverseString(str) {
           return str.split('').reverse().join('');
         }
 
         document.write(reverseString("hello"));
-      </script>
+      </script></p>
 
-      
+      <!--
+        Factorize a number
+          return the factoral of the provided integer.
+          if the integer is reprrestented with the letter n,
+          a factoral is the product of all positive integers
+          less than or equal to n.
+      -->
+
+      <p><script type="text/javascript">
+
+        function factoralize(num) {
+          var count = 1;
+          for (i = 1; i <= num; i++) {
+            count *= i;
+          }
+          return count;
+        }
+
+        document.write(factoralize(5));
+
+      </script></p>
 
     </body>
   </head>
