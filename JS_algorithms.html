@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 
-<!--
-  Reverse a string and the result must be a string.
-  Need to first make the string an array,
-  then reverse it ,
-  then make it a string again.
--->
+
 
 <html>
   <head>
     <title>FreeCodeCamp JS Algorithms</title>
     <body>
 
+      <!--
+        Reverse a string and the result must be a string.
+        Need to first make the string an array,
+        then reverse it ,
+        then make it a string again.
+      -->
       <script type="text/javascript">
-        document.write("hey now brown cow");
+
+        function reverseString(str) {
+          return str.split('').reverse().join('');
+        }
+
+        document.write(reverseString("hello"));
       </script>
+
+      
 
     </body>
   </head>
